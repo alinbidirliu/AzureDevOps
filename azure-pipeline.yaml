@@ -1,0 +1,12 @@
+trigger:
+- main  # or your preferred branch
+
+pool:
+  vmImage: 'ubuntu-latest'  # or 'windows-latest' / 'macos-latest'
+
+steps:
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      echo "Hello from Azure DevOps!"
